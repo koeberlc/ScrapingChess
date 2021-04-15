@@ -34,7 +34,7 @@ def main():
             json.dump(analyse.get_data(), outfile, indent=4, ensure_ascii=False)
 
     saisie = askAnalyse()
-    if saisie == "y":
+    if saisie == "1":
         while 1:
             saisie = chooseAnalyse()
             if saisie == "1":
@@ -84,11 +84,11 @@ def askAnalyse():
         saisie(String)
 
     '''
-    choix = ["y", "n"]
+    choix = ["1", "2"]
     print("---------------------------------------")
     print("Voulez-vous obtenir des statistiques complémentaires ?")
-    print("y/ oui")
-    print("n/ non")
+    print("1/ oui")
+    print("2/ non")
     print("---------------------------------------")
     saisie = input("Saisie : ")
 
